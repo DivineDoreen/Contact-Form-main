@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Contact form</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="header">Contact Us</p>
+      <div class="names">
+        <label for="firstName"
+          >First Name *
+          <input type="text" id="firstName" />
+          <!-- This field is required -->
+        </label>
+
+        <label for="lastName">
+          Last Name *
+          <input type="text" id="lastName" />
+          <!--This field is required -->
+        </label>
+      </div>
+
+      <label for="emailAddress"
+        >Email Address *
+        <input type="email" id="emailAddress" />
+        <!--Please enter a valid email address This field is required-->
+      </label>
+
+      <fieldset>
+        <legend>Query Type *</legend>
+        <div class="generalEnquiry">
+          <label for="generalEnquiry">
+            <div class="radio1-svg" id="radio1-svg"></div>
+            <input type="radio" id="generalEnquiry" />General Enquiry
+          </label>
+        </div>
+
+        <div class="supportRequest">
+          <label for="supportRequest">
+            <div class="radio2-svg" id="radio2-svg"></div>
+            <input type="radio" id="supportRequest" /> Support Request
+          </label>
+        </div>
+        <!--Please select a query type-->
+      </fieldset>
+      <label for='message'>Message *
+        <textarea id="message"></textarea>
+      </label> 
+      <!--This field is required--> 
+      <label for="consent">
+        <input type="checkbox" id="consent">
+        I consent to being contacted by the team *
+      <!--To submit this form, please consent to being contacted Submit Message Sent!
+      Thanks for completing the form. We'll be in touch soon!-->
+      </label>
+
+      <button type="submit" id="submit">Submit</button>
+    </div>
+
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Doreen Ogan</a>.
+    </div>
+  </body>
+</html>
