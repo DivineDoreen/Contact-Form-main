@@ -54,7 +54,7 @@ body {
     height: 2.5vw;
     padding: 0.5vw;
     margin-bottom: 0vw;
-    border: 1px solid hsl(148, 38%, 91%);
+    border: 1.5px solid hsl(187, 24%, 22%);
 }
 
 #firstName,
@@ -99,7 +99,7 @@ legend {
     display: flex;
     flex-direction: column;
     height: 2.5vw;
-    border: 1px solid hsl(148, 38%, 91%);;
+    border: 1px solid hsl(187, 24%, 22%);
     flex: 1;
     border-radius: 0.5vw;
     justify-content: center;
@@ -108,34 +108,34 @@ legend {
 }
 
 input[type='radio'] {
-    width: 1.4vw;
-    height: 1.3vw;
-    margin-right: 0.7vw;
+    width: 1.1vw;
+    height: 1.1vw;
+    margin-right: 0.6vw;
 }
 
 label[for='message'] {
-    font-size: 1.3vw;
+    font-size: 1.2vw;
 }
 
 #message {
     height: 5vw;
     width: 100%;
-    padding: 1vw;
+    padding: 0.5vw;
     font-size: 1.2vw;
     border-radius: 0.5vw;
     margin-top: 0.8vw;
     margin-bottom: 0.5vw;
     font-family: 'Karla', Arial, Helvetica, sans-serif;
-    border: 1px solid hsl(148, 38%, 91%);
+    border: 1px solid hslhsl(187, 24%, 22%);
 }
 
 label[for='consent'] {
-    font-size: 1.3vw;
+    font-size: 1.2vw;
 }
 
 #consent {
-    width: 1.4vw;
-    height: 1.4vw;
+    width: 1.1vw;
+    height: 1.1vw;
     margin-top: 0.5vw;
     margin-right: 0.3vw;
 }
@@ -186,17 +186,37 @@ label[for='consent'] {
 
 .error-message {
     color: red;
-    font-size: 1.2vw;
+    font-size: 1vw;
     margin-bottom: 0.8vw;
 }
 
 #checkboxError {
     color: red;
-    font-size: 1.2vw;
+    font-size: 1vw;
 } 
 
 .input-error {
     border: 1px solid red !important;
+}
+
+.success-state {
+    background-color: hsl(187, 24%, 22%);
+    display: flex;
+    flex-direction: column;
+    color: hsl(0, 0%, 100%);
+    position: fixed;
+    top: 1vw;
+    margin: 0 auto;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    align-content: start;
+    font-size: 1.2vw;
+    line-height: 2vw
+}
+
+.success-img {
+    width: 1.5vw;
+    height: 1.3vw;
 }
 
 
@@ -215,10 +235,11 @@ label[for='consent'] {
     }
 
     .container {
-        min-width: 100%;
+        width: auto;
         height: auto;
         border-radius: 1vw;
         padding: 1rem;
+        overflow: hidden;
     }
 
     .header {
@@ -235,7 +256,7 @@ label[for='consent'] {
     #lastName,
     #emailAddress {
         padding: 1rem;
-        border: 1px solid hsl(148, 38%, 91%);
+        border: 1px solid hslhsl(187, 24%, 22%);
         margin-bottom: 0.5rem;
         margin-top: 0.5rem;
         font-size: 0.9rem;
@@ -253,7 +274,7 @@ label[for='consent'] {
 
     .generalEnquiry,
     .supportRequest {
-        border: 1px solid hsl(148, 38%, 91%);
+        border: 1px solid hslhsl(187, 24%, 22%);
         padding: 0.6rem;
         border-radius: 0.5rem;
         margin-bottom: 0.6rem;
@@ -268,9 +289,9 @@ label[for='consent'] {
 
     #generalEnquiry,
     #supportRequest {
-        width: 1.5rem;
-        height: 1rem;
-        margin-right: 0.7rem;
+        width: 1.2rem;
+        height: 0.9rem;
+        margin-right: 0.5rem;
         
     }
 
@@ -304,15 +325,16 @@ label[for='consent'] {
 
     label[for='consent'] {
         font-size: 0.9rem;
-        gap: 0.8rem;
+        gap: 0.4rem;
         display: flex;
-        margin-bottom: 0.5rem;
-        margin-top: 1rem
+        margin-top: 1rem;
+        justify-content: center;
+        align-content: center;
     }
 
     #consent {
-        height: 1.5rem;
-        width: auto;
+        height: 0.9rem;
+        width: 1rem;
     }
 
     #submit {
@@ -333,5 +355,27 @@ label[for='consent'] {
     #message {
         border: 1px solid hsl(169, 82%, 27%);
         outline: none;
+    }
+
+    .success-state {
+        background-color: hsl(187, 24%, 22%);
+        display: flex;
+        max-width: 80%;
+        flex-direction: column;
+        gap: 1.5rem;
+        color: hsl(0, 0%, 100%);
+        position: fixed;
+        top: 1rem;
+        margin: 0 auto;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        align-content: start;
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+    
+    .success-img {
+        width: 1.2rem;
+        height: 0.9rem;
     }
 }

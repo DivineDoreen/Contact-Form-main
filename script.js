@@ -1,5 +1,6 @@
 const form = document.getElementById('myForm');
 const formElements = form.querySelectorAll('input, textarea');
+const successAlert = document.getElementById('success-state');
 
 form.addEventListener('submit', (event) => {
     let isValid = true;
@@ -47,8 +48,11 @@ form.addEventListener('submit', (event) => {
     }
 
     if (isValid) {
+        successAlert.style.display = 'block';
         form.reset();
-        alert('Form submitted');
+        setTimeout(() => {
+            successAlert.style.display = 'none';
+        }, 5000);
     }
 
     function showError(element, message) {
